@@ -5,7 +5,6 @@ const handleCastErrorDB = (err) => {
 };
 const handleDuplicateFieldDB = (err) => {
   const value = err.errorResponse.errmsg.match(/(["'])(?:(?=(\\?))\2.)*?\1/)[0];
-  console.log(value);
   const message = `${value} already exists. Please enter another value`;
   return new AppError(message, 400);
 };

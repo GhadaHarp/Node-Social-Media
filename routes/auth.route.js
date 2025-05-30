@@ -1,5 +1,3 @@
-console.log("Registering auth routes...");
-
 const express = require("express");
 const {
   signup,

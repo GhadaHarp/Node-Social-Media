@@ -1,5 +1,3 @@
-console.log("Registering comment routes...");
-
 const express = require("express");
 
 const { protect } = require("../controllers/auth.controller");

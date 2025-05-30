@@ -1,5 +1,3 @@
-console.log("Registering post routes...");
-
 const express = require("express");
 const {
   getAllPosts,

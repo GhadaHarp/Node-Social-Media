@@ -63,7 +63,6 @@ const updateUserProfile = catchAsync(async (req, res, next) => {
   if (req.file?.path) {
     updates.avatar = req.file.path;
   }
-  console.log(req.body);
   if (Object.keys(updates).length === 0) {
     return next(new AppError("No valid fields provided to update.", 400));
   }

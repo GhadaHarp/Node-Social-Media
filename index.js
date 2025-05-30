@@ -6,7 +6,7 @@ const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 
 const AppError = require("./utils/appError");
-const connectDB = require("./db");
+const connectDB = require("./utils/connectDB");
 
 const authRouter = require("./routes/auth.route");
 const postRouter = require("./routes/post.route");
